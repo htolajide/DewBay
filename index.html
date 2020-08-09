@@ -30,13 +30,21 @@
 				alert("mail sent successfully")
 			});
 		}
-	</script>
+    </script>
+    <style>
+        #logo {display: block;}
+        @media only screen and (min-width: 240px) and (max-width: 767px){
+            #logo{
+            display:none;
+        }
+    }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md" style="background-color: #3B64B3;">
         <div class="container-fluid"><a class="navbar-brand" href="#"
-                style="color: #fff;font-size: 20px;font-family: 'IBM Plex Sans', sans-serif;line-height: 36px;">&nbsp;<img
+                style="color: #fff;font-size: 20px;font-family: 'IBM Plex Sans', sans-serif;line-height: 36px;">&nbsp;<img id="logo"
                     src="assets/img/logo.png"> Dewbay Multinational</a><button data-toggle="collapse"
                 class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
                     class="navbar-toggler-icon"></span></button>
