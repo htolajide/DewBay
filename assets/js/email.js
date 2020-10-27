@@ -8,7 +8,7 @@ function sendEmail(event) {
     const submit_btn = document.getElementById('form_btn')
     const alertSuccess = document.getElementById('success_box')
     const alertError = document.getElementById('error_box')
-    console.log(name + message)
+
     const request = {
         method: 'post',
         url: 'https://aba-trader.herokuapp.com/api/v1/contact/message/dewbay',
@@ -20,7 +20,7 @@ function sendEmail(event) {
             message: message
         }
     }
-    submit_btn.textContent = 'Processing...'
+    submit_btn.textContent = 'Please wait...'
     axios(request).then( response => {
         alertSuccess.textContent = response.data.data
         alertSuccess.style.display = 'block'
