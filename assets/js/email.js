@@ -20,7 +20,9 @@ function sendEmail(event) {
             errorMessage += `${error} <br>`
         })
         alertError.innerHTML = errorMessage
+        alertError.style.display = 'block'
     }else{
+        alertError.style.display = 'none'
         const request = {
             method: 'post',
             url: 'https://aba-trader.herokuapp.com/api/v1/contact/message/dewbay',
